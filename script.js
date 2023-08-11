@@ -1,7 +1,9 @@
 var audio = new Audio('assets/sentmessage.mp3');
-var contactString = "<div class='social'> <a target='_blank' href='tel:+916363549133'> <div class='socialItem' id='call'><img class='socialItemI' src='images/phone.svg'/><label class='number'></label></label></div> </a> <a href='mailto:varshithvh@gmail.com'> <div class='socialItem'><img class='socialItemI' src='images/gmail.svg' alt=''></div> </a> <a target='_blank' href='https://github.com/Varshithvhegde'> <div class='socialItem'><img class='socialItemI' src='images/github.svg' alt=''></div> </a> <a target='_blank' href='https://wa.me/916363549133'> <div class='socialItem'><img class='socialItemI' src='images/whatsapp.svg' alt=''>";
-var resumeString = "<img src='images/resume_thumbnail.png' class='resumeThumbnail'><div class='downloadSpace'><div class='pdfname'><img src='images/pdf.png'><label>Varshith V Hegde Resume.pdf</label></div><a href='assets/varshith_v_hegde_resume.pdf' download='varshith_v_hegde_resume.pdf'><img class='download' src='images/downloadIcon.svg'></a></div>";
-var addressString = "<div class='mapview'><iframe src='https://www.google.com/maps/dir//Moodbidri+private+Bus+Stand,+Bus+Stand+Rd,+Mudbidri,+Karnataka+574227/@13.0639,74.9991985,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3ba4ab3d49331379:0x17be05cb5b69caa2!2m2!1d74.9957298!2d13.0680955?hl=en' class='map'></iframe></div><label class='add'><address>B2 'Asara'<br>Kodoli<br>Kolhapur, Maharashtra, INDIA 416114</address>";
+//var contactString = "<div class='social'> <a target='_blank' href='tel:+916363549133'> <div class='socialItem' id='call'><img class='socialItemI' src='images/phone.svg'/><label class='number'></label></label></div> </a> <a href='mailto:varshithvh@gmail.com'> <div class='socialItem'><img class='socialItemI' src='images/gmail.svg' alt=''></div> </a> <a target='_blank' href='https://github.com/Varshithvhegde'> <div class='socialItem'><img class='socialItemI' src='images/github.svg' alt=''></div> </a> <a target='_blank' href='https://wa.me/916363549133'> <div class='socialItem'><img class='socialItemI' src='images/whatsapp.svg' alt=''>";
+var contactString = "<div class='social'> <a target='_blank' href='https://t.me/moneyit2022'> <div class='socialItem'><img class='socialItemI' src='images/tg.svg' alt=''></div></a><a target='_blank' href='https://wa.me/12812360979'> <div class='socialItem'><img class='socialItemI' src='images/whatsapp.svg' alt=''>";
+
+//var resumeString = "<img src='images/resume_thumbnail.png' class='resumeThumbnail'><div class='downloadSpace'><div class='pdfname'><img src='images/pdf.png'><label>Varshith V Hegde Resume.pdf</label></div><a href='assets/varshith_v_hegde_resume.pdf' download='varshith_v_hegde_resume.pdf'><img class='download' src='images/downloadIcon.svg'></a></div>";
+//var addressString = "<div class='mapview'><iframe src='https://www.google.com/maps/dir//Moodbidri+private+Bus+Stand,+Bus+Stand+Rd,+Mudbidri,+Karnataka+574227/@13.0639,74.9991985,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3ba4ab3d49331379:0x17be05cb5b69caa2!2m2!1d74.9957298!2d13.0680955?hl=en' class='map'></iframe></div><label class='add'><address>B2 'Asara'<br>Kodoli<br>Kolhapur, Maharashtra, INDIA 416114</address>";
 
 function startFunction() {
     setLastSeen();
@@ -82,25 +84,25 @@ function waitAndResponce(inputText) {
     switch (inputText.toLowerCase().trim()) {
         case "intro":
             setTimeout(() => {
-                sendTextMessage("Hello there 👋🏻,<br><br>My name is <span class='bold'><a class='alink'>Varshith V Hegde</a>.</span><br><br>I am a Computer Engineering student at <span class='bold'>Mangalore Institute of Technology and Engineering👨🏻‍💻📚</span><br><br>I am eager to hear about potential career opportunities, so I would be pleased to chat about job openings in the engineering sphere.<br><br>Send <span class='bold'>'help'</span> to know more about me.<br>");
+                sendTextMessage("Hello there 👋🏻,<br><br>My name is <span class='bold'><a class='alink'>Stripchats.ai</a>.</span><br><br>I am an <span class='bold'>AI conversational bot </span><br><br> eagerly looking forward to engaging with you. Feel free to initiate the conversation by sending the <br><br><span class='bold'>'help'</span> command, <br><br>which will assist you in quickly navigating through our interaction.<br>");
             }, 2000);
             break;
         
         
 
         case "help":
-            sendTextMessage("<span class='sk'>Send Keyword to get what you want to know about me...<br>e.g<br><span class='bold'>'skills'</span> - to know my skills<br><span class='bold'>'resume'</span> - to get my resume<br><span class='bold'>'education'</span> - to get my education details<br><span class='bold'>'contact'</span> - to get ways to connect with me<br><span class='bold'>'projects'</span> - to get details of my projects<br><span class='bold'>'clear'</span> - to clear conversation<br>");
+            sendTextMessage("<span class='sk'>Send Keyword to get what you want to know about me...<br>e.g<br><span class='bold'>'bot'</span> - to know our bot link<br><br><span class='bold'>'subscribe'</span> - to get Latest news and updates<br><br><span class='bold'>'contact'</span> - to get ways to connect with me<br><br><span class='bold'>'clear'</span> - to clear conversation<br>");
             break;
-        case "resume":
-            sendTextMessage(resumeString);
-            break;
-        case "skills":
-            sendTextMessage("<span class='sk'>I am currently pursuing B.E degree in Computer Science Engineering.<br><br>I can comfortably write code in following languages :<br><span class='bold'>Java<br>C<br>PHP<br>Kotlin<br>Dart<br><br>CSS<br>HTML<br>JavaScript</span><br><br>I am well versed with following frameworks :<span class='bold'><br>Android<br>Flutter<br>ReactJs</span><br>");
-            break;
+//        case "resume":
+//            sendTextMessage(resumeString);
+//            break;
+//        case "skills":
+//            sendTextMessage("<span class='sk'>I am currently pursuing B.E degree in Computer Science Engineering.<br><br>I can comfortably write code in following languages :<br><span class='bold'>Java<br>C<br>PHP<br>Kotlin<br>Dart<br><br>CSS<br>HTML<br>JavaScript</span><br><br>I am well versed with following frameworks :<span class='bold'><br>Android<br>Flutter<br>ReactJs</span><br>");
+//            break;
 
-        case "education":
-            sendTextMessage("I am currently pusuing B.E degree in Computer Science Engineering from MITE Moodabidri<br>Passing Year : 2023<br><br>I have completed my PU from Excellent PU College Moodabidri<br>Passing Year:2019<br>Result:94%<br><br>I have completed my Secondary school from local school known as M K Shetty<br>Passing Year:2017");
-            break;
+//        case "education":
+//            sendTextMessage("I am currently pusuing B.E degree in Computer Science Engineering from MITE Moodabidri<br>Passing Year : 2023<br><br>I have completed my PU from Excellent PU College Moodabidri<br>Passing Year:2019<br>Result:94%<br><br>I have completed my Secondary school from local school known as M K Shetty<br>Passing Year:2017");
+//            break;
 
         
         case "clear":
@@ -112,9 +114,9 @@ function waitAndResponce(inputText) {
         case "contact":
             sendTextMessage(contactString);
             break;
-        case "projects":
-            sendTextMessage("You want to check my projects? Then just jump into my Github Account.<br><br><div class='social'><a target='_blank' href='https://github.com/Varshithvhegde'> <div class='socialItem'><img class='socialItemI' src='images/github.svg' alt=''></div> </a></div>");
-            break;
+//        case "projects":
+//            sendTextMessage("You want to check my projects? Then just jump into my Github Account.<br><br><div class='social'><a target='_blank' href='https://github.com/Varshithvhegde'> <div class='socialItem'><img class='socialItemI' src='images/github.svg' alt=''></div> </a></div>");
+//            break;
         case "time":
             var date = new Date();
             sendTextMessage("Current time is " + date.getHours() + ":" + date.getMinutes());
@@ -127,46 +129,46 @@ function waitAndResponce(inputText) {
 
         case "hai":
             sendTextMessage("Hello there 👋🏻");
-            sendTextMessage("<span class='sk'>Send Keyword to get what you want to know about me...<br>e.g<br><span class='bold'>'skills'</span> - to know my skills<br><span class='bold'>'resume'</span> - to get my resume<br><span class='bold'>'education'</span> - to get my education details<br><span class='bold'>'contact'</span> - to get ways to connect with me<br><span class='bold'>'projects'</span> - to get details of my projects<br><span class='bold'>'clear'</span> - to clear conversation<br>");
+            sendTextMessage("<span class='sk'>Send Keyword to get what you want to know about me...<br>e.g<br><span class='bold'>'bot'</span> - to know our bot link<br><br><span class='bold'>'subscribe'</span> - to get Latest news and updates<br><br><span class='bold'>'contact'</span> - to get ways to connect with me<br><br><span class='bold'>'clear'</span> - to clear conversation<br>");
             break;
         case "hello":
             sendTextMessage("Hello there 👋🏻");
-            sendTextMessage("<span class='sk'>Send Keyword to get what you want to know about me...<br>e.g<br><span class='bold'>'skills'</span> - to know my skills<br><span class='bold'>'resume'</span> - to get my resume<br><span class='bold'>'education'</span> - to get my education details<br><span class='bold'>'contact'</span> - to get ways to connect with me<br><span class='bold'>'projects'</span> - to get details of my projects<br><span class='bold'>'clear'</span> - to clear conversation<br>");
+            sendTextMessage("<span class='sk'>Send Keyword to get what you want to know about me...<br>e.g<br><span class='bold'>'bot'</span> - to know our bot link<br><br><span class='bold'>'subscribe'</span> - to get Latest news and updates<br><br><span class='bold'>'contact'</span> - to get ways to connect with me<br><br><span class='bold'>'clear'</span> - to clear conversation<br>");
             break;
         
         case "hi":
             sendTextMessage("Hello there 👋🏻");
-            sendTextMessage("<span class='sk'>Send Keyword to get what you want to know about me...<br>e.g<br><span class='bold'>'skills'</span> - to know my skills<br><span class='bold'>'resume'</span> - to get my resume<br><span class='bold'>'education'</span> - to get my education details<br><span class='bold'>'contact'</span> - to get ways to connect with me<br><span class='bold'>'projects'</span> - to get details of my projects<br><span class='bold'>'clear'</span> - to clear conversation<br>");
+            sendTextMessage("<span class='sk'>Send Keyword to get what you want to know about me...<br>e.g<br><span class='bold'>'bot'</span> - to know our bot link<br><br><span class='bold'>'subscribe'</span> - to get Latest news and updates<br><br><span class='bold'>'contact'</span> - to get ways to connect with me<br><br><span class='bold'>'clear'</span> - to clear conversation<br>");
             break;
         
         case "hey":
             sendTextMessage("Hello there 👋🏻");
-            sendTextMessage("<span class='sk'>Send Keyword to get what you want to know about me...<br>e.g<br><span class='bold'>'skills'</span> - to know my skills<br><span class='bold'>'resume'</span> - to get my resume<br><span class='bold'>'education'</span> - to get my education details<br><span class='bold'>'contact'</span> - to get ways to connect with me<br><span class='bold'>'projects'</span> - to get details of my projects<br><span class='bold'>'clear'</span> - to clear conversation<br>");
+            sendTextMessage("<span class='sk'>Send Keyword to get what you want to know about me...<br>e.g<br><span class='bold'>'bot'</span> - to know our bot link<br><br><span class='bold'>'subscribe'</span> - to get Latest news and updates<br><br><span class='bold'>'contact'</span> - to get ways to connect with me<br><br><span class='bold'>'clear'</span> - to clear conversation<br>");
             break;
        
 
-        case "varshith":
+        case "stripchats":
             sendTextMessage("Yes, that's me");
             break;
-        case "varshith hegde":
+        case "stripchats.ai":
             sendTextMessage("Yes, that's me");
             break;
-        case "varshith v hegde":
-            sendTextMessage("Yes, that's me");
-            break;
+//        case "varshith v hegde":
+//            sendTextMessage("Yes, that's me");
+//            break;
         
         case "website":
-            sendTextMessage("You can check my website here <a target='_blank' href='https://varshithvhegde.github.io/'>Varshith Hegde</a>");
+            sendTextMessage("You can check my website here <a class='alink' target='_blank' href='https://Stripchats.ai/'>Stripchats.ai</a>");
             break;
-        case "blog":
-            sendTextMessage("You can check my blog here <a target='_blank' href='https://varshithvhegde.github.io/hugo-blog'>Varshith Hegde</a>");
-            break;
+//        case "blog":
+//            sendTextMessage("You can check my blog here <a target='_blank' href='https://varshithvhegde.github.io/hugo-blog'>Varshith Hegde</a>");
+//            break;
         
-        case "github":
-            sendTextMessage("You can check my github here <a target='_blank' href='https://github.com/Varshithvhegde'>Varshith Hegde</a>");
+        case "bot":
+            sendTextMessage("You can check my telegram bot here <a class='alink' target='_blank' href='https://t.me/your_nice_gf_bot?start=6278492494'>Stripchats.ai</a>");
             break;
-        case "linkedin":
-            sendTextMessage("You can check my linkedin here <a target='_blank' href='https://www.linkedin.com/in/varshithvhegde'>Varshith Hegde</a>");
+        case "subscribe":
+            sendTextMessage("You can check my telegram channel here <a class='alink' target='_blank' href='https://t.me/aipicuchannel/'>Stripchats.ai</a>");
             break;
         case "friends":
         case "friend":
